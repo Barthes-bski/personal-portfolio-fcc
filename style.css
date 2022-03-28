@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Sedgwick+Ave+Display&family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: black;
+  --grey-color: #252525;
+  --second-color: #3d78c2;
+  --third-color: #356695;
+  --fourth-color: #2d5568;
+  --fifth-color: #25443c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body 
+{
+  background-color: var(--third-color);
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+  
+}
+
+.tag-logo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: var(--second-color);
+  font-size: 22px;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-color);
+  padding: 20px;
+  z-index: 100;
+}
+
+.navbar-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--second-color);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+a.nav-link{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover.nav-link {
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+a:active.nav-link {
+  color: #252525;
+}
+
+/* for footer */
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:active {
+  color: #252525;
+}
+/* for footer */
+
+.container {
+  width: 100%;
+  margin: 9rem auto 0 auto;
+  padding-bottom: 1rem;
+}
+
+.welcome-name {
+  font-size: 75px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 auto 2rem 0;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 100px 0px;
+  min-height: 85vh;
+}
+
+.projects-section {
+  background-color: var(--second-color);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 30px;
+}
+
+.project-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+.project-card{
+  background-color: var(--grey-color);
+  border-radius: 3px;
+  transition: transform 0.35s ease-in-out;
+}
+
+.project-tile {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.project-card a{
+  color: var(--second-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  color: var(--second-color);
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.project-card :active {
+  color: var(--second-color);
+}
+
+.project-img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.separator {
+  text-align: center;
+  padding: 10px;
+  background-color: #af0404;
+}
+
+.separator h1 {
+  color: #fff;
+}
+
+span {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #e4e4e4;
+}
+
+.footer {
+  color: #fff;
+  font-style: italic;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .section-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    justify-items: stretch;
+  }
+
+  .description
+  {
+    padding: 0 10px 0 10px;
+  }
+
+  .img-section{
+    padding: 0 10px 0 10px;
+  }
+
+
+}
+
+/* Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .description
+  {
+    padding: 0 10px 0 10px;
+  }
+
+  .img-section{
+    padding: 0 10px 0 10px;
+  }
+}
+
+/* Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .description
+  {
+    padding: 0 10px 0 10px;
+  }
+
+  .img-section{
+    padding: 0 10px 0 10px;
+  }
+
+  #video {
+    width: 500;
+    height: 300;
+  }
+}
